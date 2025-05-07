@@ -165,7 +165,7 @@ header a {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
 
     .grid2 {
         grid-template-columns: 1fr;
