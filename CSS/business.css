@@ -4,6 +4,12 @@
 }
 
 
+.img {
+    border-radius: 30%;
+    height: 50px;
+}
+
+
 header ul {
     display: flex;
     flex-direction: row;
@@ -16,6 +22,8 @@ header ul {
 header ul li h2 {
     color: #fff;
     cursor: pointer;
+    border-radius: 15%;
+    box-shadow: 0 0 20px rgb(46, 46, 226), 0 0 40px rgb(7, 7, 73);
 }
 
 header a {
@@ -61,6 +69,10 @@ header a {
     font-size: 40px;
     color: rgb(7, 7, 73);
     text-align: center;
+}
+
+.center {
+    padding: 100px 1%;
 }
 
 

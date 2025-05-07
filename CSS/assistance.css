@@ -1,6 +1,12 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+}
+
+
+.img {
+    border-radius: 30%;
+    height: 50px;
 }
 
 
@@ -19,7 +25,6 @@ header ul li h2 {
     border-radius: 15%;
     box-shadow: 0 0 20px rgb(46, 46, 226), 0 0 40px rgb(7, 7, 73);
 }
-
 
 header a {
     text-decoration: none;
@@ -43,6 +48,7 @@ header a {
     background-color: transparent;
 }
 
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -52,83 +58,14 @@ header a {
     background-color:  rgb(3, 3, 92);;
 }
 
-.img {
-    border-radius: 30%;
-    height: 50px;
-}
 
-.view {
-    object-fit: cover;
-}
-
-.middle {
-    background-image: url(../Images/Sign\ in.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-}
-
-.middle h2 {
-    font-size: 40px;
-}
-
-.mask {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
+.assist {
     text-align: center;
-    color: #FFF;
+    color: rgb(7, 7, 73);
+    padding-top: 15%;
+    font-size: 30px;
 }
 
-.mask>div {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-.mask>div>div {
-    padding: 50px 40%;
-}
-
-.primary-text {
-    color: rgb(238, 23, 23);
-}
-
-
-.text-blue {
-    color: rgb(3, 3, 92);
-}
-
-.services {
-    text-align: center;
-    padding: 2%;
-    font-size: 40px;
-    color: rgb(3, 3, 92);
-}
-
-
-.grid2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    margin-top: 20px;
-    object-fit: cover;
-    margin: 20px;
-}
-
-
-.grid2 img {
-    border-radius: 5% 5% 0 0;
-}
-
-.grid2 div {
-    border-radius: 5%;
-    border: 3px solid transparent;
-    box-shadow: 0 0 10px rgb(232, 38, 38), 0 0 20px rgb(238, 23, 23);
-}
-
-.grid2 div b , p {
-    color: rgb(3, 3, 92);
-}
 
 
 @media (max-width: 1200px) {
@@ -140,9 +77,6 @@ header a {
         gap: 20px;
         padding: 0;
         margin: 0;
-    }
-    .grid2 {
-        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -160,9 +94,6 @@ header a {
     .grid {
         grid-template-columns: 1fr;
     }
-    .grid2 {
-        grid-template-columns: 1fr 1fr;
-    }
     header ul {
         display: grid;
         grid-template-columns: repeat(3 auto);
@@ -171,12 +102,8 @@ header a {
 
 @media (max-width: 576px) {
 
-    .grid2 {
-        grid-template-columns: 1fr;
-    }
     header ul {
         display: grid;
         grid-template-columns: repeat(3 auto);
     }
 }
-
