@@ -95,6 +95,19 @@ header a {
     text-align: center;
 }
 
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.grid3 img {
+    border-radius: 50%;
+}
+
 .center {
     padding: 100px 1%;
 }
@@ -146,6 +159,9 @@ header a {
     .grid2 {
         grid-template-columns: 1fr 1fr;
     }
+    .grid3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 
@@ -153,6 +169,12 @@ header a {
 
     .grid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 850px) {
+    .grid3 {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -189,3 +211,10 @@ header a {
         grid-template-columns: repeat(3 auto);
     }
 }
+
+@media (max-width: 510px) {
+    .grid3 {
+        grid-template-columns: 1fr;
+    }
+}
+
