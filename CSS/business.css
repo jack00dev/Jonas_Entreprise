@@ -4,6 +4,15 @@
 }
 
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: roboto-regular;
+}
+
+
 .img {
     border-radius: 30%;
     height: 50px;
@@ -24,7 +33,21 @@ header ul li h2 {
     cursor: pointer;
     border-radius: 15%;
     box-shadow: 0 0 20px rgb(46, 46, 226), 0 0 40px rgb(7, 7, 73);
+    overflow: hidden;
+    animation: branch 1, 5s infinite alternate;
 }
+
+
+@keyframes branch {
+    0% {
+        box-shadow: 0 0 20px rgb(46, 46, 226), 0 0 40px rgb(7, 7, 73);
+    }
+
+    100% {
+        box-shadow: 0 0 40px rgb(46, 46, 226), 0 0 90px rgb(7, 7, 73);
+    }
+}
+
 
 header a {
     text-decoration: none;
@@ -55,7 +78,8 @@ header a {
     margin: 0;
     padding: 0;
     align-items: center;
-    background-color:  rgb(3, 3, 92);;
+    background-color: rgb(3, 3, 92);
+    ;
 }
 
 
@@ -87,14 +111,21 @@ header a {
     border-radius: 10px;
     box-shadow: 0 0 20px rgb(46, 46, 226), 0 0 40px rgb(7, 7, 73);
     overflow: hidden;
-    animation: hello 1.5s infinite alternate;
+    animation: travel 1.5s infinite alternate;
 }
 
 
-@keyframes hello {
+@font-face {
+    font-family: roboto-regular;
+    src: url(../Fonts/Roboto-Regular.ttf);
+}
+
+
+@keyframes travel {
     0% {
         box-shadow: 0 0 20px rgb(46, 46, 226), 0 0 40px rgb(7, 7, 73);
     }
+
     100% {
         box-shadow: 0 0 40px rgb(46, 46, 226), 0 0 90px rgb(7, 7, 73);
     }
@@ -111,6 +142,7 @@ header a {
         padding: 0;
         margin: 0;
     }
+
     .grid2 {
         grid-template-columns: 1fr 1fr;
     }
@@ -127,12 +159,19 @@ header a {
 
 @media (max-width: 720px) {
 
+    header ul li {
+        margin: 5px 50px;
+        text-align: center;
+    }
+
     .grid {
         grid-template-columns: 1fr;
     }
+
     .grid2 {
         grid-template-columns: 1fr;
     }
+
     header ul {
         display: grid;
         grid-template-columns: repeat(3 auto);
@@ -144,9 +183,9 @@ header a {
     .grid2 {
         grid-template-columns: 1fr;
     }
+
     header ul {
         display: grid;
         grid-template-columns: repeat(3 auto);
     }
 }
-
